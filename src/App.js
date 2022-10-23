@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-
 import { fetchWeather } from './api/fetchWeather';
 import './App.css';
 
-const App = () => {
+export default function App (){
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
 
@@ -38,5 +37,3 @@ const App = () => {
     </div>
   );
 }
-
-export default App;
